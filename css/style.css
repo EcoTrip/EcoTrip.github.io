@@ -211,7 +211,7 @@ h6 {
     /*text-decoration: underline;*/
 }
 
-#intro .intro-content .btn-get-started,
+.btn-get-started,
 .btn-projects {
     font-family: "Raleway", sans-serif;
     font-size: 15px;
@@ -238,10 +238,10 @@ h6 {
 .btn-projects {
     background: #50d8af;
     border: 2px solid #50d8af;
+    color: white;
 }
 
-.btn-projects:hover,
-.btn-projects:visited {
+.btn-projects:hover {
     background: none;
     color: #50d8af;
 }
@@ -727,7 +727,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0;
     vertical-align: middle;
     text-align: center;
-    
 }
 
 #portfolio .portfolio-item h2 {
@@ -736,7 +735,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 0;
     text-transform: capitalize;
     font-weight: 700;
-    
+    /*  -webkit-box-shadow: 0px 3px 36px 17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 36px 17px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 36px 17px rgba(0, 0, 0, 0.75);*/
 }
 
 #portfolio .portfolio-item img {
@@ -754,12 +755,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: rgba(0, 0, 0, 0.7);
 }
 
+#portfolio .portfolio-item:hover .portfolio-overlay .portfolio-info {
+    display: inherit;
+}
+
 #portfolio .portfolio-info {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 
