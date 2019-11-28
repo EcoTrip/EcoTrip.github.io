@@ -727,14 +727,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 0;
     vertical-align: middle;
     text-align: center;
+    
 }
 
 #portfolio .portfolio-item h2 {
-    color: #ffffff;
-    font-size: 24px;
+    color: white;
+    font-size: 34px;
     margin: 0;
     text-transform: capitalize;
     font-weight: 700;
+    
 }
 
 #portfolio .portfolio-item img {
