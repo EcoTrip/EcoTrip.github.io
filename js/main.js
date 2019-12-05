@@ -1,5 +1,21 @@
 jQuery(document).ready(function ($) {
 
+  var t_prokata = 30,//время проката
+    price = 70,//цена за 30 минут
+    sum = 0;//Итого\
+
+  $('#transport').change(function () {
+    price = $('#transport option:selected').attr('price_30');
+    summa();
+  });
+  $('#time_prokat').change(function () {
+    t_prokata = $('#time_prokat').val();
+    summa();
+  });
+  function summa() {
+    sum = parseInt(price) * parseInt(t_prokata) / 30;
+    $('#itogo').text(sum);
+  }
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

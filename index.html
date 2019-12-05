@@ -250,7 +250,7 @@
         <!-- #Поставщики -->
 
         <!--==========================
-      Our Portfolio Section
+      Виды транспорта Section
     ============================-->
         <section id="portfolio" class="wow fadeInUp">
             <div class="container">
@@ -350,7 +350,7 @@
 
             </div>
         </section>
-        <!-- #portfolio -->
+        <!-- #Виды -->
 
         <!--==========================
       Отзывы Section
@@ -442,16 +442,15 @@
         <!-- #testimonials -->
 
         <!--==========================
-      Call To Action Section
+      Рассчет Section
     ============================-->
         <section id="call-to-action" class="wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-left">
-                        <h3 class="cta-title">Call To Action</h3>
-                        <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3 class="cta-title">Рассчет проката</h3>
+                        <p class="cta-text"> Данный раздел поможет покупателю рассчитать его стоимость проката
+                            определенного оборудования.</p>
                     </div>
                     <div class="col-lg-3 cta-btn-container text-center">
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -464,7 +463,7 @@
 
             </div>
         </section>
-        <!-- #call-to-action -->
+        <!-- #Рассчет -->
 
         <!--==========================
       Команда Section
@@ -655,20 +654,27 @@
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Средство
                             передвижения:</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Гироскутер</option>
-                            <option>Сегвей</option>
-                            <option>Моноколесо</option>
-                            <option>Велосипед</option>
-                            <option>Самокат</option>
-                            <option>Роликовые коньки</option>
+                        <select class="form-control" id="transport">
+                            <option price_30=70>Гироскутер</option>
+                            <option price_30=80>Сегвей</option>
+                            <option price_30=120>Моноколесо</option>
+                            <option price_30=50>Велосипед</option>
+                            <option price_30=30>Самокат</option>
+                            <option price_30=35>Роликовые коньки</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Время аренды:</label>
+                        <input type=number value=30 step=30 min=30 max=300 class="form-control" id="time_prokat">
+
+                    </div>
+                    <div class="form-group">
+                        <h2>Итого: <span id="itogo">70</span>руб</h2>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save
-                        changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button id="calk" type="button" class="btn btn-primary">Рассчитать</button>
                 </div>
             </div>
         </div>
